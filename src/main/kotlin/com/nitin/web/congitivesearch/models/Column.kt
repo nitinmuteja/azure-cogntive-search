@@ -15,6 +15,6 @@ data class Column(
 
     @SearchableField
     @JvmField 
-    val description: String,
+    val columnDescription: String,
 
 )
