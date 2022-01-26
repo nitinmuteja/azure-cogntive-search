@@ -18,13 +18,12 @@ repositories {
 }
 
 
-springBoot { mainClass.set("com.nitin.web.cognitivesearch.CognitivesearchApplication") }
 
 
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
-//	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect:1.6.0")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0")
 	implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2")

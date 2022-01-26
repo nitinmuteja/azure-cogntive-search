@@ -1,12 +1,20 @@
 package com.nitin.web.congitivesearch.models
 import kotlinx.serialization.Serializable
+import com.azure.search.documents.indexes.SimpleField
+import com.azure.search.documents.indexes.SearchableField
 
-@Serializable
 data class Column(
-    @JvmField val columnName: String,
+    
+    @SearchableField(analyzerName="en.microsoft",synonymMapNames=["default"])
+    @JvmField 
+    val columnName: String,
+    
+    @SimpleField
+    @JvmField 
+    val dataType: String,
 
-    @JvmField val dataType: String,
-
-    @JvmField val description: String,
+    @SearchableField
+    @JvmField 
+    val description: String,
 
 )
