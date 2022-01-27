@@ -23,6 +23,10 @@ data class Dataset(
     var datasetType: String,
 
     @JvmField
+    @SimpleField(isFilterable=true,isFacetable=true)
+    var location: String,
+
+    @JvmField
     @SearchableField(isFilterable=true,isFacetable=true,synonymMapNames=["default"])
     var stewardName: String,
 
